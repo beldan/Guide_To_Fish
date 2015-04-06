@@ -1,0 +1,67 @@
+
+
+apply plugin: 'com.android.application'
+apply plugin: 'maven'
+
+buildscript {
+    repositories {
+        maven { url 'http://repo1.maven.org/maven2' }
+        maven { url 'https://oss.sonatype.org/content/groups/public/' }
+        maven { url 'http://maven.apache.org/' }
+        maven { url 'http://clinker.47deg.com/nexus/content/groups/public' }
+    }
+    dependencies {
+        classpath 'com.fortysevendeg.android:android-worldweatheronline-client:1.0-SNAPSHOT'
+        classpath 'it.restrung:restrung:1.0-SNAPSHOT'
+        classpath 'ly.apps:android-rest:1.2.1-SNAPSHOT@aar'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "beldan.guidetofish"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.2'
+    compile 'com.google.android.gms:play-services:6.5.87'
+    compile files('libs/Parse-1-2/Parse-1.5.1.jar')
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'io.nlopez.clusterer:library:1.0.2'
+    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.0'
+    compile 'org.apache.httpcomponents:httpclient:4.4'
+    compile 'org.apache.httpcomponents:httpclient-cache:4.4'
+    compile 'org.apache.httpcomponents:httpmime:4.4'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile project(':restrung')
+    compile project(':forecastIOwrapper')
+}

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Guide To Fish</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_all_catches">AllCatchesActivity</string>
+    <string name="title_activity_add_catch">AddCatchActivity</string>
+    <string name="title_activity_my_catches">MyCatchesActivity</string>
+    <string name="title_activity_weather">WeatherActivity</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+    <string name="title_activity_brag_wall">BragWallActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_fish_data">FishDataActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="google_maps_key">AIzaSyA_GuSdFtmbo_Rc_gj96vhcz-mB6S694Pg</string>
+    <string name="title_activity_all_catches_detail">All Catches</string>
+    <string name="title_activity_caught_fish">My Fish</string>
+    <string name="title_activity_caught_fish_details">My Fish Details</string>
+    <string name="title_activity_bait_list_view">BaitListViewActivity</string>
+    <string name="title_activity_species_list_view">SpeciesListViewActivity</string>
+    <string name="title_activity_caught_fish_map">CaughtFishMapActivity</string>
+    <string name="measurement_pref">MEASUREMENT</string>
+    <string name="title_activity_user__create">User_Create</string>
+    <string name="title_activity_user__login">User_Login</string>
+    <string name="title_activity_create_profile">CreateProfileActivity</string>
+</resources>

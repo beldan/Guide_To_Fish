@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    android:id="@+id/popupLayout">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/popupButton1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Hybrid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/popupButton2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popupButton1"
+            android:text="Satellite"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/popupButton3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popupButton2"
+            android:text="Normal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/popupButton4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popupButton3"
+            android:text="All Fish"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/popupButton5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popupButton4"
+            android:text="Saltwater Fish"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/popupButton6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popupButton5"
+            android:text="FRESHWATER Fish"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/popupButton7"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popupButton6"
+            android:text="FADS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+
+</ScrollView>

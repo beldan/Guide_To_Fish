@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="beldan.guidetofish.Settings.SettingsActivity"
+    android:background="@drawable/gradient_background"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:text="Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_color"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/setting_user_layout"
+        android:layout_below="@id/settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/settings_current_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Current User:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/settings_userText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/settings_current_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="username"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/settings_change_user_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/settings_userText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Change User"/>
+
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/settings_measure_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_user_layout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Please select your preferred measurement setting:"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/settings_measurement_layout"
+        android:layout_below="@id/settings_measure_text"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/settings_metric_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="METRIC"
+            android:enabled="true"
+            android:background="@drawable/borders"/>
+        <Button
+            android:id="@+id/settings_imperial_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="IMPERIAL"
+            android:background="@drawable/borders"/>
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

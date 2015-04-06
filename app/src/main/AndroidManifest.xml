@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="beldan.guidetofish" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBUjLUae2Vqgf9H6tAH-alwg2RmGoEd1RU" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AllCatches.AllCatchesActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_all_catches"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AddCatch.AddCatchActivity"
+            android:label="@string/title_activity_add_catch"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WeatherActivity"
+            android:label="@string/title_activity_weather" >
+        </activity>
+        <activity
+            android:name=".FriendsActivity"
+            android:label="@string/title_activity_friends" >
+        </activity>
+        <activity
+            android:name=".BragWallActivity"
+            android:label="@string/title_activity_brag_wall" >
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".FishDataActivity"
+            android:label="@string/title_activity_fish_data" >
+        </activity>
+        <activity
+            android:name=".Settings.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".AllCatches.AllCatchesDetailActivity"
+            android:label="@string/title_activity_all_catches_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CaughtFish.CaughtFishActivity"
+            android:label="@string/title_activity_caught_fish"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CaughtFish.CaughtFishDetailsActivity"
+            android:label="@string/title_activity_caught_fish_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AddCatch.BaitListViewActivity"
+            android:label="@string/title_activity_bait_list_view" >
+        </activity>
+        <activity
+            android:name=".AddCatch.SpeciesListViewActivity"
+            android:label="@string/title_activity_species_list_view" >
+        </activity>
+        <activity
+            android:name=".CaughtFish.CaughtFishMapActivity"
+            android:label="@string/title_activity_caught_fish_map" >
+        </activity>
+        <activity
+            android:name=".Settings.User_Create"
+            android:label="@string/title_activity_user__create" >
+        </activity>
+        <activity
+            android:name=".Settings.User_Login"
+            android:label="@string/title_activity_user__login" >
+        </activity>
+        <activity
+            android:name=".CreateProfileActivity"
+            android:label="@string/title_activity_create_profile" >
+        </activity>
+    </application>
+
+</manifest>
